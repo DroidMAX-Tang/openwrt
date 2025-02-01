@@ -147,7 +147,8 @@ define Device/radxa_cm3-io
 endef
 TARGET_DEVICES += radxa_cm3-io
 
-DEVICE_VENDOR := Lckfb
+define Device/lckfb_tspi
+  DEVICE_VENDOR := Lckfb
   DEVICE_MODEL := TSPI
   SOC := rk3566
   DEVICE_DTS := rockchip/rk3566-lckfb-tspi
