@@ -147,6 +147,14 @@ define Device/radxa_cm3-io
 endef
 TARGET_DEVICES += radxa_cm3-io
 
+DEVICE_VENDOR := Lckfb
+  DEVICE_MODEL := TSPI
+  SOC := rk3566
+  DEVICE_DTS := rockchip/rk3566-lckfb-tspi
+  UBOOT_DEVICE_NAME := lckfb-tspi-rk3566
+endef
+TARGET_DEVICES += lckfb_tspi
+
 define Device/radxa_e25
   DEVICE_VENDOR := Radxa
   DEVICE_MODEL := E25
