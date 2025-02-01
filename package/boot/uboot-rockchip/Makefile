@@ -174,6 +174,13 @@ define U-Boot/radxa-cm3-io-rk3566
     radxa_cm3-io
 endef
 
+define U-Boot/lckfb-tspi-rk3566
+  $(U-Boot/rk3566/Default)
+  NAME:=TSPI
+  BUILD_DEVICES:= \
+    lckfb_tspi
+endef
+
 define U-Boot/radxa-zero-3-rk3566
   $(U-Boot/rk3566/Default)
   NAME:=ZERO 3E/3W
@@ -314,6 +321,7 @@ UBOOT_TARGETS := \
   rock-pi-e-v3-rk3328 \
   nanopi-r3s-rk3566 \
   radxa-cm3-io-rk3566 \
+  lckfb-tspi-rk3566 \
   radxa-zero-3-rk3566 \
   rock-3c-rk3566 \
   bpi-r2-pro-rk3568 \
